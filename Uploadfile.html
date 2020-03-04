@@ -1,0 +1,15 @@
+<html>
+    <script>
+        function fileUpdate(e) {
+            let photo = e.files[0];
+            console.log("#photo : ", photo);
+        }
+    </script>
+    <body>
+        <form action="#" method="post" id="form1">
+            <input type="file" id="file_input" label="Upload Here" accept="image/*" capture="capture" onchange="fileUpdate(this)">
+        </form>
+        <button type="submit" form="form1" value="Submit">Submit</button>
+    </body>
+</html>
+<!-- test1-->
